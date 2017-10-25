@@ -1,4 +1,4 @@
-/*CLASES REUTILIZABLES*/
+/*SETEAR MI CÓDIGO*/
 
   * {
     margin: 0;
@@ -7,6 +7,7 @@
     box-sizing: border-box;
   }
 
+  /*CLASES REUTILIZABLES*/
   body {
     margin: 0 auto;
     font-size: 16px;
@@ -22,28 +23,26 @@
   }
 
 
-  /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
+  /* Clases específicas */
 
   header {
     position: relative;
   }
-
+  /* Navegador */
   nav {
    position: fixed;
    background-color: #fff;
-   z-index:100;
+   z-index:100;   /* Para que esté sobre todo */
    margin: 0;
    padding: 0;
    top: 0;
    width:100%;
-   outline: 1px solid blue;
    box-sizing: border-box;
    height: 100px;
    left:0;
   }
-
+    /* Menú */
   ul.menu {
-    outline: 1px solid red;
     list-style: none;
     background: #fff;
     padding: 15px 165px;
@@ -51,7 +50,6 @@
   }
 
   li {
-    /*outline: 1px solid green;*/
     width: auto;
     display: inline-block;
     text-align: center;
@@ -59,26 +57,24 @@
     padding: 0 25px;
   }
 
+  /* Opciones del nav */
   li a {
-    /*outline: 1px solid green;*/
     text-decoration: none;
     display: block;
     color: rgb(49, 51, 50);
-
     font-size: 16px;
     font-weight: 600;
   }
 
   a:hover {
-    /*background: #f9a91a;*/
     color: #E95853;
   }
 
   section {
     width: 100%;
-    outline: 1px solis rgb(231, 127, 43);
   }
 
+  /*Logo de la página */
   .logo img {
     width: 55px;
     height: auto;
@@ -86,17 +82,15 @@
     position: absolute;
     right: 165px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%);   /* Alinear al centro */
   }
 
+    /* Texto sobre home */
   .home-container {
-    outline: 1px solid yellow;
-    /*background-color: rgb(123, 154, 226);*/
-    width: 100%;
+    width: 1000px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    /*padding: 80px 90px;*/
     box-sizing: border-box;
   }
 
@@ -106,20 +100,20 @@
     margin-left: auto;
     padding-left: 14px;
     padding-right: 14px;
-    outline: 1px solid red;
   }
 
+  /* Primera sección - HOME */
   #home {
     margin-top: 100px;
+    position: relative;
   }
 
   #home img {
     width: 100%;
     height: 100%;
-    position: relative;
   }
 
-  #home .texto  {
+  #home .home-container {
     position: absolute;
     top:48%;
     left: 50%;
@@ -131,15 +125,16 @@
     width: 100%;
   }
 
+  /*Clases para los textos de home */
   .texto h2 {
     font-size: 25px;
     font-weight: 500;
-    padding-top: 95px;
-    padding-bottom: 78px;
+    padding-top: 0;
+    padding-bottom: 25px;
   }
 
   .texto h1 {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 600;
     padding-top: 32px;
   }
@@ -153,9 +148,10 @@
   .texto a {
     background-color: #39CB74;
     display: inline-block;
-    padding: 18px;
+    padding: 15px;
   }
 
+  /* Sección  - SERVICES */
   #services {
     background-color: #EF7C74;
     width: 100%;
@@ -164,8 +160,6 @@
   }
 
   .services-container {
-    outline: 1px solid yellow;
-    /*background-color: rgb(123, 154, 226);*/
     width: 100%;
     text-align: center;
     margin-right: auto;
@@ -180,10 +174,10 @@
   }
 
   .services-container  div {
-    outline: 1px solid rgb(184, 60, 204);
     display: inline-block;
   }
 
+  /*Clases para los textos de services */
   .services-container  h2, h4, h5, h6 {
     color: #fff;
   }
@@ -209,7 +203,7 @@
     padding-top: 26px;
     font-size: 14px;
     font-weight: 400;
-      padding-bottom: 7px;
+    padding-bottom: 7px;
   }
 
   .services-container h6 {
@@ -218,9 +212,8 @@
     font-weight: 300;
   }
 
+    /* Tercera sección - WORK */
   .work-container {
-    outline: 1px solid rgb(34, 200, 252);
-    background-color: rgb(123, 154, 226);
     width: 100%;
     text-align: center;
     margin-right: auto;
@@ -233,6 +226,8 @@
     width: 60%;
     height:auto;
   }
+
+  /*Clases para los textos de work */
   .work-container h2 {
     padding-bottom: 53px;
     color: #191919;
@@ -242,9 +237,8 @@
     color: #424242;
   }
 
+    /* Primera sección - GALLERY PHOTOS*/
   .gallery-container {
-    outline: 1px solid rgb(34, 200, 252);
-    background-color: rgb(245, 210, 104);
     width: 100%;
     text-align: center;
     margin-right: auto;
@@ -273,11 +267,11 @@
   }
 
   .gallery-container div{
-    /*background-color: rgb(210, 110, 112);*/
     display: inline-block;
     margin-bottom: 70px;
   }
 
+  /* Footer */
   footer p {
     background-color: #373B46;
     color: #fff;

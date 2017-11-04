@@ -3,7 +3,6 @@
   * {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
   }
 
@@ -12,6 +11,7 @@
     margin: 0 auto;
     font-size: 16px;
     line-height: 1.71429;
+    font-family: 'Raleway', sans-serif;
   }
 
   .text-uppercase {
@@ -20,6 +20,18 @@
 
   img {
     vertical-align: middle;
+  }
+
+  .mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .mt-0 {
+    margin-top: 0px;
+  }
+
+  .m-0 {
+    margin: 0px;
   }
 
 
@@ -33,13 +45,9 @@
    position: fixed;
    background-color: #fff;
    z-index:100;   /* Para que esté sobre todo */
-   margin: 0;
-   padding: 0;
    top: 0;
    width:100%;
-   box-sizing: border-box;
    height: 100px;
-   left:0;
   }
     /* Menú */
   ul.menu {
@@ -70,13 +78,10 @@
     color: #E95853;
   }
 
-  section {
-    width: 100%;
-  }
 
   /*Logo de la página */
   .logo img {
-    width: 55px;
+    width: 70px;
     height: auto;
     float: left;
     position: absolute;
@@ -85,62 +90,40 @@
     transform: translateY(-50%);   /* Alinear al centro */
   }
 
-    /* Texto sobre home */
-  .home-container {
-    width: 1000px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    box-sizing: border-box;
-  }
-
-  .texto {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
   /* Primera sección - HOME */
   #home {
     margin-top: 100px;
-    position: relative;
-  }
-
-  #home img {
+    background-image: url("../assets/images/bg-home.jpg");
     width: 100%;
-    height: 100%;
-  }
-
-  #home .home-container {
-    position: absolute;
-    top:48%;
-    left: 50%;
-    text-align: center;
-    transform: translateX(-50%) translateY(-50%);
-    box-sizing: border-box;
-    vertical-align: middle;
+    background-size: cover;
     color: #fff;
-    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+
+  .texto {
+    padding: 60px 0 140px 0;
+  }
+
 
   /*Clases para los textos de home */
   .texto h2 {
-    font-size: 25px;
+
+    font-size: 1.5em;
     font-weight: 500;
-    padding-top: 0;
-    padding-bottom: 25px;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
   .texto h1 {
-    font-size: 50px;
+    font-size: 3.2em;
     font-weight: 600;
-    padding-top: 32px;
+    padding-top: 1em;
   }
 
   .texto p {
-    font-size: 15px;
+    font-size: 1em;
     font-weight: lighter;
     padding-bottom: 70px;
   }
@@ -156,63 +139,41 @@
     background-color: #EF7C74;
     width: 100%;
     height: 100%;
-    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 70px 0;
   }
 
-  .services-container {
-    width: 100%;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 80px 90px;
-    box-sizing: border-box;
-  }
 
   .services-container  img {
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    margin-bottom: 20px;
   }
 
   .services-container  div {
     display: inline-block;
-  }
-
-  /*Clases para los textos de services */
-  .services-container  h2, h4, h5, h6 {
-    color: #fff;
+    width: 30%;
   }
 
   .services-container h2 {
-    font-size: 32px;
-    font-weight: 600;
-    letter-spacing: 4px;
-    padding-bottom: 50px;
+    font-size: 35px;
   }
 
   .services-container h4 {
-    font-weight: 500;
-    padding-bottom: 90px;
-    box-sizing: border-box;
+    padding-bottom: 70px;
   }
 
   .user, .concept, .design {
     margin: 0 77px;
   }
 
-  .services-container h5 {
-    padding-top: 26px;
-    font-size: 14px;
-    font-weight: 400;
-    padding-bottom: 7px;
+  #services h6 {
+    font-weight: 500;
   }
 
-  .services-container h6 {
-    padding-bottom: 7px;
-    font-size: 12px;
-    font-weight: 300;
-  }
 
-    /* Tercera sección - WORK */
+
+  /* Tercera sección - WORK */
   .work-container {
     width: 100%;
     text-align: center;
@@ -223,8 +184,7 @@
   }
 
   .work-container img {
-    width: 60%;
-    height:auto;
+    width: 80%;
   }
 
   /*Clases para los textos de work */
@@ -237,39 +197,40 @@
     color: #424242;
   }
 
-    /* Primera sección - GALLERY PHOTOS*/
-  .gallery-container {
+  /* imagenes */
+  .imagenes-container {
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .imagenes-container .row {
     width: 100%;
+    margin: 80px 0;
+    overflow: auto;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 80px 90px;
-    box-sizing: border-box;
+    }
+
+  .imagenes-container .row figure {
+    width: 33.3%;
+    float: left;
   }
 
-  .gallery-container img {
-    width: 300px;
-    height: auto;
-    margin: 0 33px;
-    display: inline-block;
-    position: relative;
-    padding-bottom: 30px;
-    box-sizing: border-box;
+  .imagenes-container .row figure img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
   }
 
-  .gallery-container div img figcaption {
-    display: inline;
+  .row figure figcaption {
+    margin-top: 10px;
+    text-align: center;
   }
 
-  .gallery-container figcaption.text-uppercase {
-    font-weight: 600;
+  .row figcaption.text-uppercase {
+    font-weight: 500;
     color: #191919;
   }
 
-  .gallery-container div{
-    display: inline-block;
-    margin-bottom: 70px;
-  }
 
   /* Footer */
   footer p {
